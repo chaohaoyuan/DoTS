@@ -1,0 +1,9 @@
+{
+  "name": "sampling_sft_grpo",
+  "original_data_path": "./data/valid.all.dedup.parquet",
+  "score_file_path": "./output/difficulty/sft_grpo/consistency_difficulty_details.json",
+  "output_dir": "./output/sampling/sft_grpo",
+  "sample_size_per_group": 8,
+  "diff_threshold": 0.8,
+  "seeds": [0]
+}

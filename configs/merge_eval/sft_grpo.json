@@ -1,0 +1,20 @@
+{
+  "name": "merge_eval_sft_grpo",
+  "data_file": "./data/valid.all.parquet",
+  "base_model_path": "/path/to/your/base_model",
+  "model_a": {
+    "label": "sft",
+    "path": "/path/to/your/SFT_model"
+  },
+  "model_b": {
+    "label": "grpo",
+    "path": "/path/to/your/GRPO_model"
+  },
+  "output_dir": "./output/merge_eval/sft_grpo",
+  "eval_script": "/path/to/your/eval_script.py",
+  "template": "own",
+  "remove_system": true,
+  "add_oat_evaluate": true,
+  "model_name_template": "sft_{scale_a}_grpo_{scale_b}",
+  "cache_dir": "./cache/task_vectors"
+}

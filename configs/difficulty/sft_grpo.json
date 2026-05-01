@@ -1,0 +1,22 @@
+{
+  "name": "difficulty_sft_grpo",
+  "data_file": "./data/valid.all.dedup.parquet",
+  "output_dir": "./output/difficulty/sft_grpo",
+  "base_model_path": "/path/to/your/base_model",
+  "model_a": {
+    "label": "sft",
+    "path": "/path/to/your/SFT_model"
+  },
+  "model_b": {
+    "label": "grpo",
+    "path": "/path/to/your/GRPO_model"
+  },
+  "votes": 5,
+  "temp_model_dir": "/dev/shm/tmp_eval_model",
+  "generation": {
+    "max_tokens": 8192,
+    "temperature": 0.6,
+    "top_p": 1.0
+  },
+  "cache_dir": "./cache/task_vectors"
+}

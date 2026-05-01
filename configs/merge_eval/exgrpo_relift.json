@@ -1,0 +1,20 @@
+{
+  "name": "merge_eval_exgrpo_relift",
+  "data_file": "./data/valid.all.parquet",
+  "base_model_path": "/path/to/your/base_model",
+  "model_a": {
+    "label": "exgrpo",
+    "path": "/path/to/your/ExGRPO_model"
+  },
+  "model_b": {
+    "label": "relift",
+    "path": "/path/to/your/ReLIFT_model"
+  },
+  "output_dir": "./output/merge_eval/exgrpo_relift",
+  "eval_script": "/path/to/your/eval_script.py",
+  "template": "own",
+  "remove_system": true,
+  "add_oat_evaluate": true,
+  "model_name_template": "exgrpo_{scale_a}_relift_{scale_b}",
+  "cache_dir": "./cache/task_vectors"
+}

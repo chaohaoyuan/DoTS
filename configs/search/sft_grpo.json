@@ -1,0 +1,30 @@
+{
+  "name": "search_sft_grpo",
+  "base_model_path": "/path/to/your/base_model",
+  "dataset_path": null,
+  "model_a": {
+    "label": "sft",
+    "path": "/path/to/your/SFT_model"
+  },
+  "model_b": {
+    "label": "grpo",
+    "path": "/path/to/your/GRPO_model"
+  },
+  "output_dir": "./output/search/sft_grpo",
+  "temp_model_dir": "/dev/shm/tmp_merged_model",
+  "votes": 7,
+  "trials": 100,
+  "search_space": {
+    "a_min": 0.5,
+    "a_max": 2.0,
+    "b_min": 0.5,
+    "b_max": 2.0
+  },
+  "generation": {
+    "max_tokens": 8192,
+    "temperature": 0.6,
+    "top_p": 1.0
+  },
+  "ppl_max_length": 8192,
+  "cache_dir": "./cache/task_vectors"
+}

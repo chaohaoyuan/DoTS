@@ -1,0 +1,22 @@
+{
+  "name": "difficulty_exgrpo_relift",
+  "data_file": "./data/valid.all.dedup.parquet",
+  "output_dir": "./output/difficulty/exgrpo_relift",
+  "base_model_path": "/path/to/your/base_model",
+  "model_a": {
+    "label": "exgrpo",
+    "path": "/path/to/your/ExGRPO_model"
+  },
+  "model_b": {
+    "label": "relift",
+    "path": "/path/to/your/ReLIFT_model"
+  },
+  "votes": 5,
+  "temp_model_dir": "/dev/shm/tmp_eval_model",
+  "generation": {
+    "max_tokens": 8192,
+    "temperature": 0.6,
+    "top_p": 1.0
+  },
+  "cache_dir": "./cache/task_vectors"
+}

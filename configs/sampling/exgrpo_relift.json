@@ -1,0 +1,9 @@
+{
+  "name": "sampling_exgrpo_relift",
+  "original_data_path": "./data/valid.all.dedup.parquet",
+  "score_file_path": "./output/difficulty/exgrpo_relift/consistency_difficulty_details.json",
+  "output_dir": "./output/sampling/exgrpo_relift",
+  "sample_size_per_group": 8,
+  "diff_threshold": 0.8,
+  "seeds": [0]
+}
